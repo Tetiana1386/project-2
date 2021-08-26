@@ -1007,6 +1007,7 @@ var modals = function modals() {
       if (!display) {
         document.querySelector(selector).style.display = 'block';
         document.body.style.overflow = "hidden";
+        var scroll = calcScroll();
         document.body.style.marginRight = "".concat(scroll, "px");
       }
     }, time);

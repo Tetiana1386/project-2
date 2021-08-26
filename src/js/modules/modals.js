@@ -58,6 +58,7 @@ const modals = () => {
             if (!display) {
                 document.querySelector(selector).style.display = 'block';
                 document.body.style.overflow = "hidden";
+                let scroll = calcScroll();
                 document.body.style.marginRight = `${scroll}px`;
             }
         }, time);
